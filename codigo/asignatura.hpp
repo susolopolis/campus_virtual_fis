@@ -1,6 +1,6 @@
 
 
-#include "usuario.cpp"
+#include "usuario.hpp"
 #include <vector>
 #include <iostream>
 #include <string>

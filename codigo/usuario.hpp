@@ -35,25 +35,13 @@ class usuario {
         string get_last_name(void){
             return last_name_;
         }
-        
-        void set_name(string name){
-            name_ = name;
-        }
-        void set_last_name(string last_name)
-        {
-            last_name_ = last_name; 
-        }
         int get_code() {
             return code_;
         }
-        void set_code(int code){
-            code_ = code;
-        }
-
-
         bool isProfesor(){
             return true;
         }
 
+       
         ~usuario(){}
 };

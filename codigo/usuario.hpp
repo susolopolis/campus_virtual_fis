@@ -13,42 +13,45 @@ typedef struct {
 
 class usuario {
     private:
-        std::string full_name_;
+        std::string name_;
+        std::string last_name_; 
         int code_;
         bool teacher_;
         
     public:
-        usuario(std::string full_name, int code, bool teacher) :
-            full_name_(full_name),
+        usuario(std::string name, std::string last_name, int code, bool teacher) :
+            name_(name),
+            last_name_(last_name),
             code_(code),
             teacher_(teacher)        
         { /*code*/}
 
-
-        std::string get_name(void){
-            return full_name_;
+        std::string get_name(void)
+        {
+            return name_;
+        }
+        std::string get_last_name(void){
+            return last_name_;
         }
         
-        void set_name(std::string full_name){
-            full_name_ = full_name;
+        void set_name(std::string name){
+            name_ = name;
         }
-
-
+        void set_last_name(std::string last_name)
+        {
+            last_name_ = last_name; 
+        }
         int get_code() {
             return code_;
         }
-        void set_name(int code){
+        void set_code(int code){
             code_ = code;
         }
-               
+
+
+        bool isProfesor(){
+            return true;
+        }
 
         ~usuario(){}
-
-    private:
-        bool isProfesor(){
-            if(teacher_ == 1)
-                return true;            
-        }
 };
-
-

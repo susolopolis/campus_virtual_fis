@@ -3,6 +3,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 typedef struct {   
     std::string title;
     double mark;

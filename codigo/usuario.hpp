@@ -40,13 +40,15 @@ class usuario {
         void set_name(int code){
             code_ = code;
         }
-
-
-        bool isProfesor(){
-            return true;
-        }
+               
 
         ~usuario(){}
+
+    private:
+        bool isProfesor(){
+            if(teacher_ == 1)
+                return true;            
+        }
 };
 
 

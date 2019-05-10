@@ -11,22 +11,79 @@ border{
 
 .contenedor{
 	width: 90%;
-	max-width: 1000px;
-	background-color: darkgrey;
+	max-width: 2000px;
+	background-color: #fff;
 	margin:auto;
+    
+    padding: 30px
 }
 
 /* ----- ----- HEADER ----- ----- */
 
-header .menu{
-	margin: 40px 0;
+header .logo{
+    background-color: antiquewhite
 }
 
-header .menu a{
-	margin: 0 20px;
+header .logo img{
+    width: 200px;
+}
+
+.menu{
+    display: flex;
+    flex-direction:row;
+	margin: 2px 0;
+    background-color: #fff;
+    height: 60px;
+    box-shadow: 0px 1px 1px;
+    
+}
+
+.menu a{
+    display: flex;
+	margin: 20px 20px;
 	color:#4a3f3f;
 	padding-bottom: 9px;
-	font-size: 1em;
+	font-size: 1em;    
 } 
+
+/* ----- ------ Section Asignaturas ----- ----- */
+
+.main .asignaturas{
+    background-color: #fff;
+    
+}
+
+.asignatura{
+    
+    padding: 1px;
+    padding-left: 10px;
+    box-shadow: 1px 1px 4px;
+    margin: 20px;
+}
+.calificaciones{    
+    margin: auto;    
+    width: 100px;
+    border:solid 2px;
+    padding: 5px;    
+    text-align: center;
+}
+
+.calificaciones:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 0px 2px #000;
+}
+
+/* ------ ------ footer ------ ------ */
+
+footer{
+    height: 150px;
+    background-color: antiquewhite
+}
+footer .contenedor-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 
